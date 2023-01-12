@@ -6,7 +6,7 @@ function App() {
 
     const [listItem, setListItem] = useState([]);
     const handlePlusClick = () => setListItem([listItem.length ? listItem[0] + 1 : 1, ...listItem]);
-    const handleMinusClick = () => setListItem([listItem.length ? listItem[0] - 1 : 1, ...listItem]);
+    const handleMinusClick = () => setListItem([listItem.length ? listItem[0] - 1 : -1, ...listItem]);
 
     return (
         <div className="App container mt-5">
